@@ -4,6 +4,11 @@
 	(global.helloRollupVue = factory());
 }(this, (function () {
 
+function foo () {
+    return true
+}
+
+console.log(foo);
 var Hello$1 = {render: function(){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"hello"},[_c('h1',{staticClass:"hello__title"},[_vm._v(_vm._s(_vm.msg))])])},staticRenderFns: [],
   data: function data () {
     return {

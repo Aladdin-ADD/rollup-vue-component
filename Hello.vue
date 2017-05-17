@@ -5,6 +5,8 @@
 </template>
 
 <script>
+import {foo} from './utils'
+console.log(foo)
 export default {
   data () {
     return {
