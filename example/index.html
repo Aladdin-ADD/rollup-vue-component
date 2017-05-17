@@ -7,7 +7,16 @@
     <title>rollup-plugin-vue</title>
 </head>
 <body>
+    <div id="app">
+        <hello></hello>
+    </div>
     <script src="./node_modules/vue/dist/vue.js"></script>
     <script src="../dist/papervue.js"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            components: {hello: helloRollupVue}
+        })
+    </script>
 </body>
 </html>
