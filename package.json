@@ -2,8 +2,8 @@
   "name": "rollup-vue-component",
   "version": "0.0.1",
   "description": "Roll .vue files",
-  "main": "dist/",
-  "module": "dist/rollup-plugin-vue.js",
+  "main": "dist/index.min.js",
+  "module": "dist/index.es.js",
   "scripts": {
     "test": "npm run lint && npm run build && npm run unit",
     "build": "node build.js",
