@@ -13,11 +13,11 @@ rollup({
     vue({
       compileTemplate: true,
       css (styles, stylesNodes) {
-        write('dist/papervue.styl', styles)
+        write('dist/index.styl', styles)
         stylus.render(styles, function (err, css) {
           if (err) throw err
-          write('dist/papervue.css', css)
-          write('dist/papervue.min.css', new CleanCSS().minify(css).styles)
+          write('dist/index.css', css)
+          write('dist/index.min.css', new CleanCSS().minify(css).styles)
         })
       }
     }),
@@ -30,7 +30,21 @@ rollup({
       moduleName: 'helloRollupVue',
       useStrict: false
     }).code
-    return write('dist/papervue.js', code).then(function () {
+    return write('dist/index.es.js', code).then(function () {
+      return code
+    })
+    var code = bundle.generate({
+      format: 'es',
+      moduleName: 'helloRollupVue',
+    }).code
+    return write('dist/index.js', code).then(function () {
+      return code
+    })
+    var code = bundle.generate({
+      format: 'cjs',
+      moduleName: 'helloRollupVue',
+    }).code
+    return write('dist/index.common.js', code).then(function () {
       return code
     })
   })
@@ -41,7 +55,7 @@ rollup({
         ascii_only: true
       }
     }).code
-    return write('dist/papervue.min.js', minified)
+    return write('dist/index.min.js', minified)
   })
   .catch(logError)
 

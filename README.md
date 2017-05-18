@@ -1,4 +1,4 @@
-Simple example
+Simple example(WIP)
 ===
 
 Example bundling an UMD package with one `vue` file and exporting stylus and CSS (both minified and unminified) to different files.
