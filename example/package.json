@@ -1,6 +1,0 @@
-{
-  "name": "rollup-plugin-vue",
-  "dependencies": {
-    "vue": "*"
-  }
-}
