@@ -12,7 +12,8 @@ Example bundling an UMD package with one `vue` file and exporting stylus and CSS
 
 ## features:
 + out-of-box
-+ 支持导出 cjs, umd, es 格式
++ 集成了 cz-cli
++ 支持导出 umd, es 格式
 + 支持 styl, sass, scss
 
 ## Building
