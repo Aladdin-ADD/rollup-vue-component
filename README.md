@@ -1,7 +1,7 @@
-Simple example(WIP)
-===
+# Simple example(WIP)
 
-Example bundling an UMD package with one `vue` file and exporting stylus and CSS (both minified and unminified) to different files.
+> As vue-loader is for webpack and vueify is for browserify, similarly its for rollup. As we know, webpack and browserify concat stuff and make it runnable in browser. Its difficult to share .vue components. Now roll your Vue components.
+With rollup you can break your application into reusable modules.
 
 ## linking 
 + [rollup](https://rollupjs.org/)
@@ -27,15 +27,15 @@ Example bundling an UMD package with one `vue` file and exporting stylus and CSS
 node build.js
 ```
 
-### development
-
-```bash
-npm run dev
-```
-
 ### With rollup cli
 
 ```bash
 npm i -g rollup
 rollup -c --input Hello.vue --output dist/bundle.js
+```
+
+### development
+
+```bash
+npm run dev
 ```
