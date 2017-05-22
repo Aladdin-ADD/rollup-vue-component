@@ -6,7 +6,7 @@
   "module": "dist/index.es.js",
   "scripts": {
     "test": "npm run lint && npm run build && npm run unit",
-    "build": "node build.js",
+    "build": "npm run clean && node build.js",
     "clean": "rm -rf dist/*",
     "dev": "rollup -c -w --input Hello.vue --output dist/index.min.js",
     "unit": "NODE_ENV=production mocha test/test.js --slow=5000 --timeout=10000",
