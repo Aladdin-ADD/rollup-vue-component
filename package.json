@@ -13,7 +13,8 @@
     "lint:fix": "eslint --fix src/**",
     "coveralls": "NODE_ENV=production istanbul cover --default-excludes -x 'dist/**' -x 'config/**' ./node_modules/mocha/bin/_mocha --report lcovonly  --  --slow=5000 --timeout=10000 test/test.js && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
     "prepublish": "npm run build",
-    "docs": "php -S localhost:8080 -t .github/sereno/public"
+    "docs": "php -S localhost:8080 -t .github/sereno/public",
+    "commit": "git-cz"
   },
   "repository": {
     "type": "git",
