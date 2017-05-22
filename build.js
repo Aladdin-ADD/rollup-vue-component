@@ -1,5 +1,5 @@
 const rollup = require('rollup').rollup
-const vue = require('../dist/rollup-plugin-vue.common.js')
+const vue = require('rollup-plugin-vue')
 const buble = require('rollup-plugin-buble')
 const uglify = require('uglify-js')
 const CleanCSS = require('clean-css')
@@ -31,20 +31,6 @@ rollup({
       useStrict: false
     }).code
     return write('dist/index.es.js', code).then(function () {
-      return code
-    })
-    var code = bundle.generate({
-      format: 'es',
-      moduleName: 'helloRollupVue',
-    }).code
-    return write('dist/index.js', code).then(function () {
-      return code
-    })
-    var code = bundle.generate({
-      format: 'cjs',
-      moduleName: 'helloRollupVue',
-    }).code
-    return write('dist/index.common.js', code).then(function () {
       return code
     })
   })
