@@ -14,7 +14,7 @@ export default {
 }
 </script>
 
-<style lang="stylus">
+<style lang="scss">
 .hello {
   &__title {
     color: #42b983;

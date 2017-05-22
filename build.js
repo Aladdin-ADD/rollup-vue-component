@@ -13,7 +13,7 @@ rollup({
     vue({
       compileTemplate: true,
       css (styles, stylesNodes) {
-        write('dist/index.styl', styles)
+        // write('dist/index.styl', styles)
         stylus.render(styles, function (err, css) {
           if (err) throw err
           write('dist/index.css', css)

@@ -13,9 +13,10 @@ Example bundling an UMD package with one `vue` file and exporting stylus and CSS
 
 ## features:
 + tree-shaking
-+ 集成了 cz-cli
-+ 支持导出 umd, es 格式
-+ 支持 styl, sass, scss
++ 支持导出 umd, es 格式（默认 es module）
++ 支持 sass, less & stylus
++ 支持 pug
++ 集成了 cz-cli (自动生成changelog, wip)
 
 ## Building
 
@@ -23,7 +24,6 @@ Example bundling an UMD package with one `vue` file and exporting stylus and CSS
 
 ```bash
 node build.js
-ls dist
 ```
 
 ### development
