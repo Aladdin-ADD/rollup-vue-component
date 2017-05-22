@@ -5,6 +5,7 @@ Example bundling an UMD package with one `vue` file and exporting stylus and CSS
 
 ## linking 
 + [rollup](https://rollupjs.org/)
++ [buble](https://buble.surge.sh/guide/)
 + [tree-shaking](https://medium.com/@Rich_Harris/tree-shaking-versus-dead-code-elimination-d3765df85c80)
 + [为什么要使用ES6 module](https://github.com/rollup/rollup/wiki/ES6-modules)
 + [同中有异的 Webpack 与 Rollup](https://juejin.im/post/58edb865570c350057f199a7)
