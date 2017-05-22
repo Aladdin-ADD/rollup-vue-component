@@ -3,7 +3,7 @@
 > As vue-loader is for webpack and vueify is for browserify, similarly its for rollup. As we know, webpack and browserify concat stuff and make it runnable in browser. Its difficult to share .vue components. Now roll your Vue components.
 With rollup you can break your application into reusable modules.
 
-## linking 
+## Linking 
 + [rollup](https://rollupjs.org/)
 + [buble](https://buble.surge.sh/guide/)
 + [tree-shaking](https://medium.com/@Rich_Harris/tree-shaking-versus-dead-code-elimination-d3765df85c80)
@@ -12,7 +12,7 @@ With rollup you can break your application into reusable modules.
 + [rollup-plugin-vue](https://github.com/vuejs/rollup-plugin-vue)
 
 
-## features:
+## Features
 + tree-shaking
 + 支持导出 umd, es 格式（默认 es module）
 + 支持 sass, less & stylus
